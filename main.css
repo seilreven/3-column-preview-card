@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+p {
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.03rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin-bottom: 70px;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.hero .info {
+  display: flex;
+  align-items: center;
+}
+
+.hero .info .container {
+  margin: 40px;
+}
+
+.hero .sedans {
+  background-color: var(--bright-orange);
+}
+
+.hero .suvs {
+  background-color: var(--dark-cyan);
+}
+
+.hero .luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.cta {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: 1px transparent solid;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.sedans-cta {
+  color: var(--bright-orange);
+}
+
+.suvs-cta {
+  color: var(--dark-cyan);
+}
+
+.luxury-cta {
+  color: var(--very-dark-cyan);
+}
+
+.sedans-cta:hover {
+  border: 1px white solid;
+  color: var(--transparent-white);
+  background-color: var(--bright-orange);
+}
+
+.suvs-cta:hover {
+  border: 1px white solid;
+  color: var(--transparent-white);
+  background-color: var(--dark-cyan);
+}
+
+.luxury-cta:hover {
+  border: 1px white solid;
+  color: var(--transparent-white);
+  background-color: var(--very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .hero {
+    flex-direction: column;
+    margin: 20% 5%;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .cta {
+    width: 130px;
+    height: 40px;
+    font-size: 0.85rem;
+    padding: 0;
+    line-height: 40px;
+  }
+}
