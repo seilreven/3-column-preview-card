@@ -132,7 +132,7 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 729px) {
   .hero {
     flex-direction: column;
     margin: 20% 5%;
